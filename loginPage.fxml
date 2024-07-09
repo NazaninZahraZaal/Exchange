@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="435.0" prefWidth="582.0" style="-fx-background-color: #344e41;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.testtt.LoginPage">
+    <children>
+        <AnchorPane layoutX="87.0" layoutY="30.0" prefHeight="376.0" prefWidth="407.0" style="-fx-background-color: black; -fx-background-radius: 15;">
+            <children>
+                <TextField fx:id="userField" layoutX="101.0" layoutY="64.0" prefHeight="47.0" prefWidth="255.0" promptText="username" style="-fx-background-radius: 14; -fx-background-color: #95a17f;">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </TextField>
+                <PasswordField fx:id="passField" layoutX="101.0" layoutY="131.0" prefHeight="47.0" prefWidth="255.0" promptText="password" style="-fx-background-color: #95a17f; -fx-background-radius: 14;">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </PasswordField>
+                <Button fx:id="loginButton" layoutX="113.0" layoutY="240.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #3bb547; -fx-background-radius: 15;" text="Login" textAlignment="CENTER" textFill="#36422c">
+                    <font>
+                        <Font name="Titr Bold" size="15.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="32.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/photo11824385925.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#3bb547" layoutX="155.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="97.7083740234375">
+               <font>
+                  <Font name="2  Titr Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="#3cbe47" layoutX="37.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter CAPTCHA code:" wrappingWidth="152.49481201171875">
+               <font>
+                  <Font name="2  Titr Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="codeField" layoutX="189.0" layoutY="203.0" onAction="#verifyCaptcha" prefHeight="25.0" prefWidth="66.0" promptText="Code" style="-fx-background-color: #95a17f; -fx-background-radius: 14;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Text fill="#3bb547" layoutX="74.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not a member?">
+               <font>
+                  <Font name="2  Titr Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="signupButton" layoutX="174.0" layoutY="310.0" mnemonicParsing="false" onAction="#setSignupButton" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #09ebc1; -fx-background-radius: 13;" text="Sign up">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="forgotPassButton" layoutX="249.0" layoutY="310.0" mnemonicParsing="false" onAction="#setForgotPassButton" style="-fx-background-color: #09ebc1; -fx-background-radius: 13;" text="Forgot password">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="56.0" fitWidth="67.0" layoutX="33.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/photo11837686259.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" fill="#09ebc1" layoutX="173.0" layoutY="48.0" startX="-39.99998474121094" startY="-7.62939453125E-6" stroke="#09ebc1" strokeWidth="3.0" />
+            <Text fill="#3cbe47" layoutX="99.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------" wrappingWidth="207.47003173828125">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="loginCaptchaLabel" layoutX="262.0" layoutY="203.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #95a17f; -fx-background-radius: 14;" />
+            <Button fx:id="refreshButton" layoutX="332.0" layoutY="203.0" mnemonicParsing="false" onAction="#generateCaptcha" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: #09ebc1; -fx-background-radius: 14;" text="Refresh">
+               <font>
+                  <Font name="2  Titr Bold" size="10.3" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="resultLabel" fill="#d60000" layoutX="189.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.0" />
+            <Text fx:id="userText" fill="#d60000" layoutX="106.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="232.0" />
+            <Text fx:id="passText" fill="#d60000" layoutX="106.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="232.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

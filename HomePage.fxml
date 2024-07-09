@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="882.0" style="-fx-background-color: #F6E8DA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.testtt.HomePage">
+    <children>
+        <ToolBar layoutX="16.0" layoutY="14.0" prefHeight="48.0" prefWidth="849.0" style="-fx-background-radius: 10; -fx-background-color: #A7C4D4;">
+            <items>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="username :" textAlignment="CENTER" wrappingWidth="116.80340194702148" />
+                <TextField fx:id="username" editable="false" style="-fx-background-color: #A7C4D4;">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home page" textAlignment="CENTER" wrappingWidth="260.1366939544678">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Label fx:id="timeLabel" prefHeight="23.0" prefWidth="238.0" textAlignment="CENTER" />
+            </items>
+        </ToolBar>
+        <AnchorPane layoutX="16.0" layoutY="82.0" prefHeight="409.0" prefWidth="77.0" style="-fx-background-color: #A7C4D4; -fx-background-radius: 15;">
+            <children>
+                <Button fx:id="loginButton" layoutX="9.0" layoutY="25.0" mnemonicParsing="false" onAction="#setLoginButton" prefHeight="31.0" prefWidth="60.0" style="-fx-background-radius: 15; -fx-background-color: #4F6C77;" text="Login" textFill="WHITE" />
+                <Button fx:id="signButton" layoutX="9.0" layoutY="79.0" mnemonicParsing="false" onAction="#setSignButton" prefHeight="31.0" prefWidth="58.0" style="-fx-background-radius: 15; -fx-background-color: #4F6C77;" text="Sign Up" textFill="WHITE" />
+                <Button fx:id="profButton" layoutX="9.0" layoutY="135.0" mnemonicParsing="false" onAction="#setProfButton" prefHeight="31.0" prefWidth="60.0" style="-fx-background-radius: 15; -fx-background-color: #4F6C77;" text="Profile" textFill="WHITE" />
+            <Button fx:id="exchangeButton" layoutX="8.0" layoutY="189.0" mnemonicParsing="false" onAction="#setExchangeButton" prefHeight="31.0" prefWidth="60.0" style="-fx-background-radius: 15; -fx-background-color: #4F6C77;" text="Exchange" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="103.0" layoutY="82.0" prefHeight="409.0" prefWidth="762.0" style="-fx-background-color: #EAEEEF; -fx-background-radius: 15;">
+            <children>
+                <Button fx:id="yenButton" layoutX="634.0" layoutY="279.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #6a9bad; -fx-background-radius: 12;" text="YEN" />
+                <Line endX="132.33331298828125" layoutX="627.0" layoutY="63.0" startX="-627.0" startY="1.52587890625E-5" stroke="#b2c9cf" />
+                <Line endX="120.99993896484375" layoutX="637.0" layoutY="259.0" startX="-637.0" stroke="#b2c9cf" />
+                <Line endX="120.99993896484375" layoutX="637.0" layoutY="194.0" startX="-637.0" stroke="#b2c9cf" />
+                <Line endX="128.66668701171875" layoutX="632.0" layoutY="130.0" startX="-632.0" stroke="#b2c9cf" />
+                <Button fx:id="tomanButton" layoutX="634.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleTomanButtonClick" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #6a9bad; -fx-background-radius: 12;" text="TOMAN" />
+                <Button fx:id="eurButton" layoutX="634.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleEurButtonClick" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #6a9bad; -fx-background-radius: 12;" text="EUR" />
+                <Button fx:id="usdButton" layoutX="634.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleUsdButtonClick" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #6a9bad; -fx-background-radius: 12;" text="USD" textAlignment="JUSTIFY">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Text fontSmoothingType="LCD" layoutX="680.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="بازار" />
+                <Label fx:id="c2Label" layoutX="221.0" layoutY="148.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="d2Label" layoutX="68.0" layoutY="148.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="b2Label" layoutX="381.0" layoutY="148.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="a2Label" layoutX="519.0" layoutY="148.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="d1Label" layoutX="68.0" layoutY="82.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="c1Label" layoutX="221.0" layoutY="82.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="b1Label" layoutX="377.0" layoutY="82.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="a1Label" layoutX="524.0" layoutY="82.0" prefHeight="31.0" prefWidth="60.0" textAlignment="CENTER" />
+                <Button fx:id="PriceButton" layoutX="497.0" layoutY="17.0" mnemonicParsing="false" onAction="#sortPrices" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #EAEEEF; -fx-background-radius: 12;" text="قیمت">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="PPriceButton" layoutX="355.0" layoutY="17.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #EAEEEF; -fx-background-radius: 12;" text="تغییرات">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="maxButton" layoutX="199.0" layoutY="17.0" mnemonicParsing="false" onAction="#sortMaxValues" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #EAEEEF; -fx-background-radius: 12;" text="بیشترین قیمت">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="minButton" layoutX="46.0" layoutY="17.0" mnemonicParsing="false" onAction="#sortMinValues" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #EAEEEF; -fx-background-radius: 12;" text="کمترین قیمت">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="a3Label" layoutX="519.0" layoutY="210.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="b3Label" layoutX="381.0" layoutY="210.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="d3Label" layoutX="68.0" layoutY="210.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="c3Label" layoutX="221.0" layoutY="210.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="a4Label" layoutX="519.0" layoutY="279.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="b4Label" layoutX="381.0" layoutY="279.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="d4Label" layoutX="68.0" layoutY="279.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="c4Label" layoutX="221.0" layoutY="279.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Button fx:id="gbpButton" layoutX="634.0" layoutY="338.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #6a9bad; -fx-background-radius: 12;" text="GBP" />
+                <Line endX="120.99993896484375" layoutX="639.0" layoutY="324.0" startX="-637.0" stroke="#b2c9cf" />
+                <Label fx:id="a5Label" layoutX="519.0" layoutY="338.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="b5Label" layoutX="381.0" layoutY="338.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="d5Label" layoutX="68.0" layoutY="338.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+                <Label fx:id="c5Label" layoutX="221.0" layoutY="338.0" prefHeight="31.0" prefWidth="70.0" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

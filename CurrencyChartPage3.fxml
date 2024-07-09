@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.XYChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.testtt.CurrencyChartPage3">
+    <LineChart fx:id="currencyLineChart" layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="800.0">
+        <xAxis>
+            <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </LineChart>
+</AnchorPane>

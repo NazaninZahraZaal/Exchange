@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="437.0" prefWidth="417.0" style="-fx-background-color: #4F6C77;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.testtt.Wallet">
+   <children>
+      <Text fill="#b4ced4" layoutX="169.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wallet" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="210.0" layoutY="85.0" startX="-100.0" stroke="#b4ced4" />
+      <Text layoutX="76.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your wallet(USD)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="usdLabel" alignment="CENTER" layoutX="210.0" layoutY="121.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: #b4ced4; -fx-background-radius: 15;" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Text layoutX="75.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EUR" textAlignment="CENTER" wrappingWidth="110.36865234375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="eurLabel" alignment="CENTER" layoutX="210.0" layoutY="172.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: #b4ced4; -fx-background-radius: 15;" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Text layoutX="75.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOMAN" textAlignment="CENTER" wrappingWidth="110.36865234375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="tomanLabel" alignment="CENTER" layoutX="210.0" layoutY="223.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: #b4ced4; -fx-background-radius: 15;" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Text layoutX="75.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YEN" textAlignment="CENTER" wrappingWidth="110.36865234375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="yenLabel" alignment="CENTER" layoutX="210.0" layoutY="275.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: #b4ced4; -fx-background-radius: 15;" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Text layoutX="75.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GBP" textAlignment="CENTER" wrappingWidth="110.36865234375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="gbpLabel" alignment="CENTER" layoutX="210.0" layoutY="325.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: #b4ced4; -fx-background-radius: 15;" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="backButtun" layoutX="27.0" layoutY="385.0" mnemonicParsing="false" onAction="#setBackButtun" prefHeight="28.0" prefWidth="48.0" style="-fx-background-color: RED; -fx-background-radius: 15;" text="Back" />
+   </children>
+</AnchorPane>
